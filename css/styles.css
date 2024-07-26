@@ -1,6 +1,6 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
-    color: #2e2f42;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
     background-color: #fff;
 }
 a {
@@ -14,14 +14,14 @@ ul {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: #4d5ae5;
 }
 
 .logo-span {
-    color: #4d5ae5;
+    color: #2e2f42;
 }
 
 .link {
@@ -32,16 +32,18 @@ ul {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
-.link-mail, .link-tel {
+.address-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
 
 .link:hover, .link:focus,
-.link-mail:hover, .link-mail:focus,
-.link-tel:hover, .link-tel:focus {
+.address-link:hover, .address-link:focus {
     color: #404BBF;
+}
+.address {
+    font-style: normal;
 }
 .main-title-box {
     background-color: #2E2F42;
@@ -49,27 +51,22 @@ ul {
 .main-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
 }
 .button {
     cursor: pointer;
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     background-color: #4D5AE5;
-    border-radius: 4px;
-    padding: 16px 32px;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.button:hover {
+.button:hover, .button:focus {
     background-color: #404BBF;
 }
 .features-list {
@@ -83,6 +80,7 @@ ul {
 
 .features-text {
     font-family: inherit;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -93,10 +91,14 @@ ul {
     font-family: inherit;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+}
+.team-list {
+    background-color: #FFFFFF;
 }
 .team-members {
     font-family: inherit;
@@ -118,8 +120,9 @@ ul {
     font-family: inherit;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
 }
@@ -140,7 +143,7 @@ ul {
 .footer-box {
     background-color: #2e2f42;
 }
-.studio-span {
+.footer-logo-span {
     color: #f4f4fd;
 }
 .footer-text {
