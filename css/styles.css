@@ -137,6 +137,12 @@ ul {
     letter-spacing: 0.02em;
     color: #434455;
 }
+.footer-box {
+    background-color: #2e2f42;
+}
+.studio-span {
+    color: #f4f4fd;
+}
 .footer-text {
     font-family: inherit;
     line-height: 1.5;
