@@ -1,6 +1,6 @@
 body {
-    font-family: "Roboto", sans-serif, "Raleway";
-    color: #434455;
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: #2e2f42;
     background-color: #fff;
 }
 a {
@@ -9,23 +9,59 @@ a {
 ul {
     list-style-type: none;
 }
-.link, .link-studio {
-    color: #2E2F42;
-}
-.link:hover, .link-studio:hover, .link:focus, .link-studio:focus{
-    color: #404BBF;
-}
-.link-studio:active{
-    text-decoration: underline;
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
 }
 
+.logo-span {
+    color: #4d5ae5;
+}
+
+.link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.link-mail, .link-tel {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.link:hover, .link:focus,
+.link-mail:hover, .link-mail:focus,
+.link-tel:hover, .link-tel:focus {
+    color: #404BBF;
+}
+.main-title-box {
+    background-color: #2E2F42;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+}
 .button {
     cursor: pointer;
     font-family: inherit;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     background-color: #4D5AE5;
     border-radius: 4px;
     padding: 16px 32px;
@@ -36,30 +72,74 @@ ul {
 .button:hover {
     background-color: #404BBF;
 }
+.features-list {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
 
-.web {
-    font-family: var(--second-family);
+.features-text {
+    font-family: inherit;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.box-team {
+    background: #f4f4fd;
+}
+.team {
+    font-family: inherit;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
-}
-span {
-    color: #2E2F42;
-}
-.main-title-box {
-    width: 1440px;
-    height: 600px;
-    background-color: #2E2F42;
-}
-.main-title {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 107%;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;
+    color: #2e2f42;
+}
+.team-members {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.team-job-title {
+    font-family: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+.portfolio {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+.portfolio-services {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+.portfolio-describes {
+    font-family: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.footer-text {
+    font-family: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
