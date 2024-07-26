@@ -12,7 +12,7 @@ ul {
 .link, .link-studio {
     color: #2E2F42;
 }
-.link:hover, .link-studio:hover{
+.link:hover, .link-studio:hover, .link:focus, .link-studio:focus{
     color: #404BBF;
 }
 .link-studio:active{
@@ -21,7 +21,7 @@ ul {
 
 .button {
     cursor: pointer;
-    font-family: var(--font-family);
+    font-family: inherit;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
