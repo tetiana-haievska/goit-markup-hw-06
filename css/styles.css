@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif, "Raleway";
     color: #434455;
     background-color: #fff;
 }
@@ -9,12 +9,16 @@ a {
 ul {
     list-style-type: none;
 }
-.link {
+.link, .link-studio {
     color: #2E2F42;
 }
-.link:hover {
+.link:hover, .link-studio:hover{
     color: #404BBF;
 }
+.link-studio:active{
+    text-decoration: underline;
+}
+
 .button {
     cursor: pointer;
     font-family: var(--font-family);
