@@ -86,6 +86,8 @@ ul {
 }
 .box-team {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team {
     font-family: inherit;
@@ -151,4 +153,26 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+.container {
+    width: 1158px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
