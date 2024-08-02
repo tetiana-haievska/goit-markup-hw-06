@@ -8,6 +8,24 @@ a {
 }
 ul {
     list-style-type: none;
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo {
@@ -18,10 +36,27 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 156px;
+    margin-right: 76px;
 }
 
 .logo-span {
     color: #2e2f42;
+}
+.navigation-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0;
 }
 
 .link {
@@ -31,6 +66,23 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin: 0;
+    padding: 24px 0;
+    display: block;
+}
+
+.address {
+    font-style: normal;
+    
+}
+.address-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 156px;
+    gap: 40px;
 }
 .address-link {
     line-height: 1.5;
@@ -42,11 +94,11 @@ ul {
 .address-link:hover, .address-link:focus {
     color: #404BBF;
 }
-.address {
-    font-style: normal;
-}
+
 .main-title-box {
     background-color: #2E2F42;
+    height: 600px;
+
 }
 .main-title {
     font-weight: 700;
@@ -55,6 +107,9 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
 }
 .button {
     cursor: pointer;
@@ -65,10 +120,25 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
+    padding: 16px 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
 }
 .button:hover, .button:focus {
     background-color: #404BBF;
 }
+.features {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
 .features-list {
     font-family: inherit;
     font-weight: 500;
@@ -154,9 +224,7 @@ ul {
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
-.container {
-    width: 1158px;
-}
+
 h1,
 h2,
 h3,
@@ -169,6 +237,9 @@ h6 {
 p {
   margin: 0;
 }
+
+
+
 
 
 
