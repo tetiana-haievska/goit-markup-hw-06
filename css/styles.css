@@ -140,6 +140,10 @@ h1, h2, h3, h4, h5, h6, p {
 .hero-button:focus {
     background-color: #404BBF;
 }
+.visually-hidden {
+    visibility: hidden;
+  }
+  
 .features {
     display: flex;
     justify-content: space-between;
@@ -155,7 +159,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .features-item:not(:last-child){
-margin-right: 24px;
+    margin-right: 24px;
 }
 .festures-item {
     display: flex;
