@@ -6,15 +6,22 @@ body {
 a {
     text-decoration: none;
 }
-ul {
+ul, ol {
     list-style-type: none;
     margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 .container {
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+.section {
+    padding: 120px 0;
 }
 .header .container {
     margin: 0 auto;
@@ -43,7 +50,6 @@ ul {
     gap: 0px;
     padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 156px;
     margin-right: 76px;
 }
 
@@ -54,7 +60,6 @@ ul {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: row;
     gap: 40px;
     padding: 0;
 }
@@ -73,15 +78,15 @@ ul {
 
 .address {
     font-style: normal;
-    
 }
+
 .address-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 24px;
     padding-left: 0;
-    padding-right: 156px;
+    padding-right: 15px;
     gap: 40px;
 }
 .address-link {
@@ -95,12 +100,11 @@ ul {
     color: #404BBF;
 }
 
-.main-title-box {
+.hero {
     background-color: #2E2F42;
-    height: 600px;
-
+    padding-bottom: 188px;
 }
-.main-title {
+.hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -108,10 +112,11 @@ ul {
     text-align: center;
     color: #fff;
     padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
+    padding-left: 315px;
+    padding-right: 315px;
+    padding-bottom: 48px;
 }
-.button {
+.hero-button {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     color: #fff;
@@ -119,24 +124,25 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4D5AE5;
+    border-radius: 4px;
     padding: 16px 32px;
-    display: flex;
+    display: block;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
+    margin: 0 auto;
+    border: none;
 }
-.button:hover, .button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #404BBF;
 }
 .features {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    
+    justify-content: space-between;
 }
 
 .features-list {
@@ -148,11 +154,24 @@ ul {
     color: #2e2f42;
 }
 
+.features-item:not(:last-child){
+margin-right: 24px;
+}
+.festures-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    width: calc((100% - 24px * 3)/4);
+}
+
 .features-text {
     font-family: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
 }
 .box-team {
     background: #f4f4fd;
@@ -168,9 +187,18 @@ ul {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .team-list {
+    display: flex;
+    justify-content: space-between;
+}
+.team-item {
     background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 0 4px 4px;
 }
 .team-members {
     font-family: inherit;
@@ -180,6 +208,8 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 .team-job-title {
     font-family: inherit;
@@ -187,6 +217,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-bottom: 32px;
 }
 .portfolio {
     font-family: inherit;
@@ -197,6 +228,28 @@ ul {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    padding-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item {
+    padding-top: 48px;
+}
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
 }
 .portfolio-services {
     font-family: inherit;
@@ -225,25 +278,10 @@ ul {
     color: #f4f4fd;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-
-
-
-
-
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0;
+    padding-right: 0;
+    width: calc((100% - 24px* 3) / 4);
 }
