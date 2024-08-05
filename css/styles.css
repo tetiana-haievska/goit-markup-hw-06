@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6, p {
 .section {
     padding: 120px 0;
 }
+.header {
+    border-bottom: 1px solid #e7e9fc
+}
 .header .container {
     margin: 0 auto;
     display: flex;
@@ -106,7 +109,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero {
     background-color: #2E2F42;
-    padding-bottom: 188px;
+    padding-bottom: 188px 0;
 }
 .hero-title {
     font-weight: 700;
@@ -115,10 +118,8 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    padding-top: 188px;
-    padding-left: 315px;
-    padding-right: 315px;
-    padding-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 .hero-button {
     cursor: pointer;
@@ -145,12 +146,21 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #404BBF;
 }
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
   
 .features {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 
 .features-list {
@@ -160,6 +170,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-item:not(:last-child){
@@ -199,7 +210,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .team-list {
     display: flex;
-    justify-content: space-between;
+    gap: 24px;
 }
 .team-item {
     background-color: #FFFFFF;
@@ -208,6 +219,19 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     border-radius: 0 0 4px 4px;
 }
+
+.img {
+    display: block;
+}
+.team-card {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .team-members {
     font-family: inherit;
     font-weight: 500;
@@ -215,9 +239,8 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
     color: #2e2f42;
-    padding-top: 32px;
-    padding-bottom: 8px;
 }
 .team-job-title {
     font-family: inherit;
@@ -225,7 +248,6 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    padding-bottom: 32px;
 }
 .portfolio {
     font-family: inherit;
@@ -236,15 +258,16 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .portfolio-item {
-    padding-top: 48px;
+   
 }
 .card-content {
     display: flex;
@@ -266,6 +289,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .portfolio-describes {
     font-family: inherit;
@@ -275,6 +299,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer-box {
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-logo-span {
     color: #f4f4fd;
@@ -284,11 +320,10 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 .footer-container {
-    padding-top: 100px;
-    padding-bottom: 100px;
     margin: 0;
     padding-right: 0;
     width: calc((100% - 24px* 3) / 4);
