@@ -275,7 +275,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .team-card {
     padding: 32px 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -375,7 +374,6 @@ h1, h2, h3, h4, h5, h6, p {
     transition: transform 300ms linear;
 }
 .card-content {
-    display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -384,8 +382,6 @@ h1, h2, h3, h4, h5, h6, p {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
 }
 .portfolio-services {
     font-family: inherit;
