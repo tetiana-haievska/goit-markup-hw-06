@@ -436,12 +436,12 @@ h1, h2, h3, h4, h5, h6, p {
     color: #f4f4fd;
     max-width: 264px;
 }
-
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
+.footer-container {
     align-items: baseline;
+}
+.footer-social {
+    margin-right: 120px;
+    
 }
 
 .footer-text-social {
