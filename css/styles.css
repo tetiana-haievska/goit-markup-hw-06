@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
-
 .link {
     font-family: inherit;
     font-weight: 500;
@@ -88,9 +87,11 @@ h1, h2, h3, h4, h5, h6, p {
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link.active {
     position: relative;
 }
+
 .link.active::after {
     content: "";
     width: 100%;
@@ -115,6 +116,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-right: 15px;
     gap: 40px;
 }
+
 .address-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -126,22 +128,17 @@ h1, h2, h3, h4, h5, h6, p {
 .address-link:hover, .address-link:focus, .link.active {
     color: #404BBF;
 }
-.link:hover::after {
-    
-    
-}
 /* endheader */
 
 /* hero */
 .hero-section {
     background-color: #2E2F42;
     padding: 188px 0;
-    background-image: linear-gradient(
-	to bottom, 
-	rgba(46, 47, 66, 0.7)
-    rgba(46, 47, 66, 0.7)),
-	url();
-    margin: 0 auto;
+    background-image: linear-gradient( 
+        rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office.jpg);
+    width: 1440рх;
+    background-repeat: no-repeat;
+    background-size: 1440px 600px;
 
 }
 
@@ -171,6 +168,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
     min-width: 169px;
     border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -319,13 +317,15 @@ h1, h2, h3, h4, h5, h6, p {
     height: 40px;
     background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .icon {
     fill: #fff;
   }
 
-.social-links-item:hover {
+.social-links-item:hover,
+.social-links-item:focus {
     background-color: #404BBF;
 }
 
@@ -340,14 +340,39 @@ h1, h2, h3, h4, h5, h6, p {
     color: #2e2f42;
     margin-bottom: 72px;
 }
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    cursor: pointer;
 }
-.portfolio-item {
-   
+.portfolio-list .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-text {
+    transform: translate(0);
+}
+
+.portfolio-item-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-text {
+    position: absolute;
+    top: 0;
+    background-color: #4d5ae5;
+    font-family: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    height: 100%;
+    left: 0;
+    padding: 40px 32px 164px;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
 }
 .card-content {
     display: flex;
@@ -436,15 +461,17 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 16px;
 }
 .footer-social-links-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        background-color: #4D5AE5;
-        border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
 }
 
-.footer-social-links-item:hover {
+.footer-social-links-item:hover,
+.footer-social-links-item:focus {
     background-color: #31D0AA;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
