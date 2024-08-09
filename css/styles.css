@@ -206,9 +206,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 8px;
 }
 
-.features-item:not(:last-child){
-    margin-right: 24px;
-}
+
 
 .features-item {
     display: flex;
