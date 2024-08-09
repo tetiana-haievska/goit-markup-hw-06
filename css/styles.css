@@ -226,9 +226,7 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: center;
     margin-bottom: 8px;
 }
-.features-icon {
-    
-}
+
 
 .features-text {
     font-family: inherit;
@@ -349,7 +347,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio-item {
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
