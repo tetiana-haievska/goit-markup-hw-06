@@ -488,7 +488,7 @@
           </p>
         </div>
 
-        <div class="footer-social">
+        <div class="footer-social-icons">
           <p class="footer-text-social">Social media</p>
           <ul class="footer-social-links">
             <li class="footer-social-list">
@@ -536,13 +536,30 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <form class="footer-subscribe">
+            <label class="footer-subscribe-text" for="subscribe-email">Subscribe
+              <input class="footer-subscribe-input" type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail">
+            </label>
+              <button class="footer-subscribe-btn" type="submit">Subscribe
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+          </form>
+      
+        </div>
       </div>
     </footer>
     <!-- #endregion footer-->
      <div class="backdrop is-open">
       <div class="modal">
-        
-
+        <button type="button" class="modal-close-btn">
+          <svg class="close-icon" width="8" height="8" >
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
       </div>
      </div>
   </body>
