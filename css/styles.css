@@ -646,6 +646,10 @@ p {
   margin-bottom: 8px;
 }
 
+.form-wrapper-comment {
+  margin-bottom: 16px;
+}
+
 .modal-form-label {
   font-size: 12px;
   line-height: 1.17;
@@ -706,7 +710,6 @@ p {
   width: 360px;
   height: 120px;
   resize: none;
-  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
