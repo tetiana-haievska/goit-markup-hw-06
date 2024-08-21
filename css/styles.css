@@ -36,6 +36,21 @@ p {
   padding: 120px 0;
 }
 
+@media (min-width: 320px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1158px) {
+
+}
+
+
+
+
 /* #region hero */
 .header {
   border-bottom: 1px solid #e7e9fc;
