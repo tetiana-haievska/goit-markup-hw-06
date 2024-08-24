@@ -26,26 +26,15 @@ p {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+max-width: 320px;
+padding-left: 16px;
+padding-right: 16px;
+margin: 0 auto;
 }
 
 .section {
-  padding: 120px 0;
-}
-
-@media (min-width: 320px) {
-
-}
-
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 1158px) {
-
+  padding: 96px 0;
+  /* padding: 120px 0; */
 }
 
 
@@ -219,16 +208,22 @@ p {
   overflow: hidden;
 }
 
+/* #region features */
 .features {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  /* gap: 24px; */
 }
 
 .features-list {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  /* font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.2; */
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
@@ -236,13 +231,19 @@ p {
 
 .features-item {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
-  width: calc((100% - 24px * 3) / 4);
-}
 
+  /* align-items: flex-start;
+  justify-content: flex-start; */
+  /* width: calc((100% - 24px * 3) / 4); */
+}
+.feature-icon-box {
+  display: none;
+}
+/* 
 .feature-icon-box {
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -253,19 +254,24 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
-}
+} */
+
 
 .features-text {
   font-family: inherit;
+
+  font-weight: 500;
+
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+/* #endregion features */
 
 .box-team {
   background: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
 }
 
 .team {
@@ -282,7 +288,10 @@ p {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 72px;
 }
 
 .team-item {
@@ -804,3 +813,115 @@ p {
 }
 
 /* #endregion backdrop-modal */
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  .features {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .feature-icon-box {
+    display: none;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+
+}
+
+
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .features-list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  }
+
+.features-item {
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: calc((100% - 24px * 3) / 4);
+  }
+
+.feature-icon-box {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  }
+
+.features-text {
+  font-weight: 400;
+  }
+
+.team-list {
+
+  gap: 24px;
+  }
+
+
+}
+
+
+
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ), url(../images/people-office.jpg);
+  }
+
+
+
+
+}
