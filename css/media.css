@@ -1,51 +1,49 @@
-
 @media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 
-    .menu-open-btn {
-      display: none;
-    }
-    
-    .logo {
-      padding-top: 24px;
-      padding-bottom: 24px;
-      margin-right: 120px;
-    }
-    
-    .navigation-list {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 40px;
-      padding: 0;
-    }
-    
-    .address {
-      display:flex;
-      font-style: normal;
-    }
-    
-    .address-list {
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      /* padding-left: 0;
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 120px;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .address {
+    display: flex;
+    font-style: normal;
+  }
+
+  .address-list {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* padding-left: 0;
       padding-right: 16px; */
-      gap: 12px;
-    }
-    
-    .address-link {
-      font-size: 12px;
-      line-height: 1.16;
-      letter-spacing: 0.04em;
-    }
-    .link.active::after {
-      bottom: -6px;
-    }
-    
+    gap: 12px;
+  }
+
+  .address-link {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+  .link.active::after {
+    bottom: -6px;
+  }
+
   /* ----------------- */
-  
+
   .hero-section {
     max-width: 768px;
     padding: 112px 0;
@@ -55,83 +53,83 @@
       ),
       url(../images/hero/people-office-tablet.jpg);
   }
-  
+
   @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
       background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero/people-office-tablet2x.jpg);
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-tablet2x.jpg);
     }
   }
-  
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
     margin: 0 auto 36px;
   }
   /* ----------------- */
-    .section-features {
-      padding-top: 96px;
-      padding-bottom: 110px;
-    }
-    
-    .container {
-      max-width: 768px;
-      padding-left: 16px;
-      padding-right: 16px;
-      margin: 0 auto;
-    }
-  
-    .features {
-      column-gap: 24px;
-      row-gap: 72px;
-    }
-  
-    .features-item {
-      width: calc((100% - 24px) / 2);
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-  
-    .feature-icon-box {
-      display: none;
-    }
+  .section-features {
+    padding-top: 96px;
+    padding-bottom: 110px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  .features {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features-item {
+    width: calc((100% - 24px) / 2);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .feature-icon-box {
+    display: none;
+  }
   /* media region team */
-    .box-team {
-      padding-top: 82px;
-      padding-bottom: 110px;
-    }
-  
-    .team-list {
-      flex-direction: row;
-      flex-wrap: wrap;
-      column-gap: 24px;
-      row-gap: 64px;
-      justify-content: center;
-    }
-   /* ------------ */
-   .portfolio-section {
+  .box-team {
+    padding-top: 82px;
+    padding-bottom: 110px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+  /* ------------ */
+  .portfolio-section {
     padding-top: 82px;
     padding-bottom: 96px;
-   }
-  
-   .portfolio-list {
+  }
+
+  .portfolio-list {
     column-gap: 24px;
     row-gap: 48px;
   }
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
-  
+
   .footer-box .container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     max-width: 528px;
   }
-  
+
   .footer-social {
     align-items: normal;
     padding-bottom: 72px;
@@ -139,7 +137,7 @@
   .footer-social-icons {
     align-items: normal;
   }
-  
+
   .footer-form-cont {
     align-items: normal;
   }
@@ -153,84 +151,81 @@
   .modal-textarea {
     width: 360px;
   }
-  
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
-  
-  
-  
-  @media (min-width: 1158px) {
-    .container {
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin: 0 auto;
-    }
-  
-    .section {
-      padding: 120px 0;
-    }
-  
-    .address-list {
-      flex-direction: row;
-      gap: 40px;
-      padding-left: 0;
-      padding-right: 16px;
-    }
-  
-    .address-link {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-    }
-    .link.active::after {
-      bottom: -1px;
-    }
-    /* ------------- */
-    
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 0;
+    padding-right: 16px;
+  }
+
+  .address-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .link.active::after {
+    bottom: -1px;
+  }
+  /* ------------- */
+
+  .hero-section {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-section {
-      max-width: 1440px;
-      padding: 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/people-office.jpg);
-    }
-  
-    @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .hero-section {
-        background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
         url(../images/hero/people-office2x.jpg);
-      }
     }
-  
-    .hero-title {
-      margin: 0 auto 48px;
-    }
-  
-    /* ------------ */
-    .features {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 24px;
-    }
-  
-    .features-list {
+  }
+
+  .hero-title {
+    margin: 0 auto 48px;
+  }
+
+  /* ------------ */
+  .features {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .features-list {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    }
-  
+  }
+
   .features-item {
     align-items: flex-start;
     justify-content: flex-start;
     width: calc((100% - 24px * 3) / 4);
-    }
-  
+  }
+
   .feature-icon-box {
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -241,45 +236,45 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-    }
-  
+  }
+
   .features-text {
     font-weight: 400;
-    }
-  
+  }
+
   /* ------------ */
   .team-list {
     gap: 24px;
-    }
-  
-  /* -------------- */
-    .portfolio-list {
-      column-gap: 24px;
-      row-gap: 48px;
-      cursor: pointer;
-    }
-    .card-content {
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .portfolio-item {
-      width: calc((100% - 24px * 2) / 3);
   }
-  
+
+  /* -------------- */
+  .portfolio-list {
+    column-gap: 24px;
+    row-gap: 48px;
+    cursor: pointer;
+  }
+  .card-content {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
   /* ------------ */
   .footer-box {
-    padding: 100px 0;;
+    padding: 100px 0;
   }
-  
+
   .footer-box .container {
     flex-wrap: nowrap;
     max-width: max-content;
     gap: 0;
     margin: 0 auto;
   }
-  
+
   .footer-social {
     justify-content: flex-start;
     flex-direction: column;
@@ -297,10 +292,4 @@
     gap: 24px;
   }
   /* ---------------- */
-  .modal {
-  
-  }
-  
-  
-  }
-  
+}
